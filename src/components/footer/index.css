@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200..900&display=swap');
+
+
+.grid-wrapper-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    background-color: #1e1e1e;
+    color: white;
+    padding: 2rem;
+    font-family: "Noto Serif SC", serif;
+    min-height: 400px;
+}
+
+.left-column,
+.middle-column,
+.right-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-column h1 {
+    font-size: 1.5rem;
+    font-family: "Noto Serif SC", serif;
+    margin-bottom: 1rem;
+}
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.contact-list a {
+    font-family: "Noto Serif SC", serif;
+}
+
+.contact-list a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .grid-wrapper-footer {
+        grid-template-columns: 1fr;
+    }
+}
+.grid-wrapper-footer h1 {
+    color: #f1683a;
+}
+
+.contact-list li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+}
+
+.contact-list li svg {
+    color: #555;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.right-column h1 {
+    font-size: 1.5rem;
+    font-family: "Noto Serif SC", serif;
+    margin-bottom: 1rem;
+    color: #f1683a;
+}
+.social-icons {
+    display: flex;
+    gap: 22px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.social-icons img {
+    width: 42px;
+    height: 42px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+
+.pin-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f60;
+    color: #fff;
+    font-size: 20px; /*size of the pin*/
+    width: 30px;
+    height: 30px;
+    z-index: 2;
+    border-radius: 100%;
+}
+
+.pin-button:before
+{
+    content: '';
+    position: absolute;
+    border:15px solid #fff;
+    border-radius: 50%;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    animation: bloom1 1.5s linear infinite;
+    opacity: 0;
+    z-index: 1;
+}
+.pin-button:after
+{
+    content: '';
+    position: absolute;
+    border:15px solid #fff;
+    border-radius: 50%;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    animation: bloom2 1.5s linear infinite;
+    opacity: 0;
+    animation-delay: .4s;
+    z-index: 1;
+}
+@keyframes bloom1
+{
+    0%
+    {
+        transform: scale(.5);
+    }
+    50%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        transform: scale(1.5);
+    }
+}
+@keyframes bloom2
+{
+    0%
+    {
+        transform: scale(.5);
+    }
+    50%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        transform: scale(1.5);
+    }
+}
