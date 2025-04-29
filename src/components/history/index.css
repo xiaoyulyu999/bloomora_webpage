@@ -23,9 +23,9 @@
 
 /* Content next to top-left container (row 1, col 2) */
 .center {
-    font-size: 1.7em;
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
+    font-size: 2em; /* Increased from 1.7em */
+    grid-column: 2 / 4; /* Make it span the entire row (wider) */
+    grid-row: 1 / 2; /* Move it to the middle row for central alignment */
     display: flex;
     justify-content: center;
     align-items: center;
