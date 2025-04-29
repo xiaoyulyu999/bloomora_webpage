@@ -29,8 +29,10 @@ const feedbacks = [
     {
         avatar: slider2_4,
         rating: 5,
-        location: "Berlin, Germany",
-        comment: "Lovely countryside retreat. Quiet nights, fresh air, and a hot tub under the stars. A real hidden gem!",
+        location: "China",
+        comment: "带娃出游必住！北京平谷区超赞亲子民宿，让孩子玩得开心！😍\n" +
+            "周末带着孩子来到北京平谷区的遇涧花开民宿，简直是个超赞的选择！地理位置极佳，交通便利，周边就有京东大溶洞等景点，开车15分钟即可到达。房间干净整洁，欧式风格装修，让人倍感舒适。😌\n" +
+            "民宿不仅提供了宽敞舒适的房屋类型，更是为孩子们准备了丰富的娱乐设施！益智玩具、积木拼插让孩子们玩得不亦乐乎，儿童秋千、帐篷和滑梯更是为他们打造了一个小小的乐园。这里真的是孩子们的天堂！[礼花]",
     },
     {
         avatar: slider2_5,
