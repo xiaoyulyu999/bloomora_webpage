@@ -46,7 +46,6 @@
     display: flex;
     gap: 1rem;
     justify-content: center;
-
     align-items: flex-end;
     padding: 2rem;
 }
@@ -61,7 +60,7 @@
     width: 10rem;
     height: 20rem;
     transition: 0.5s;
-    filter: brightness(0.2);
+    filter: brightness(0.5);
     cursor: pointer;
 }
 

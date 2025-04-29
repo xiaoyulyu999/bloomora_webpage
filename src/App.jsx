@@ -4,7 +4,6 @@ import Nav from "./components/nav/Nav.jsx";
 import History from "./components/history/History.jsx";
 import Reviews from "./components/reviews/Reviews.jsx";
 import Footer from "./components/footer/Footer.jsx";
-import Videos from "./components/videos/Videos.jsx";
 
 const App = () => {
     return (

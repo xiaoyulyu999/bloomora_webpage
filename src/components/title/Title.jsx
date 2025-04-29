@@ -28,15 +28,17 @@ const Title = () => {
 
                     
                     <p>
-                        🌸 北京遇见花开 · 民宿介绍
-                        在喧嚣的都市中，遇见一处静谧如花的角落 —— 这就是 北京遇见花开民宿。<br/>
-                        坐落于京郊自然风光秀丽之地，民宿融合了现代与自然的设计理念，打造出一个温馨、浪漫又充满生活美学的居住空间。无论是情侣出游，闺蜜聚会，还是家庭度假，这里都能为你带来如诗如画的惬意时光。 <br />
+                        🌸周维英家庭荣获2024年第二季度“首都最美家庭”称号。自1992年来到平谷黄松峪乡后
+                        周维英以其专业精神成为大溶洞景区金牌讲解员，并与丈夫创办旅游服务点，积极推动家乡文旅发展。
+                        夫妻二人以身作则，教育子女积极向上，生活朴素勤恳。近年来，他们开办民宿“遇涧花开”，
+                        继续助力乡村振兴。该家庭以实际行动践行美德，展现新时代最美家庭风采。
                     </p>
                 </div>
                 <div className="autoShow">
-                    🌸 北京遇见花开 · 民宿介绍 <br/>
-                    在喧嚣的都市中，遇见一处静谧如花的角落,这就是 北京遇见花开民宿。<br/>
-                    坐落于京郊自然风光秀丽之地，民宿融合了现代与自然的设计理念，<br/>打造出一个温馨、浪漫又充满生活美学的居住空间。无论是情侣出游，闺蜜聚会，还是家庭度假，这里都能为你带来如诗如画的惬意时光。
+                    🌸 遇涧花开民宿地址位于北京市平谷区北山路黑豆峪幼儿园西北侧约210米，
+                    靠近黑豆峪北环路，交通便利，多条公交线路可达。周边酒店选择丰富多样，
+                    包括北京峪山居、北京醉忘阁四合院民宿、北京郁金香温泉花园度假村、
+                    北京首农香山会议中心等，您可以通过我们的合作伙伴携程旅行轻松查询入住价格和房间信息，并在线预订。
                 </div>
 
                 <div className="autoShow">
@@ -45,12 +47,13 @@ const Title = () => {
                     </figure>
                 </div>
             </section>
-
             <section className="grid grid-3">
-                <div className="autoBLur">与你的不期而遇</div>
-                <div className="autoBLur">与你的</div>
-                <div className="autoBLur">与你的不期而遇</div>
-                <div className="autoBLur">与你的不 +</div>
+                <div className="autoBLur">感谢所有的遇见，</div>
+                <div className="autoBLur">不管是痛苦</div>
+                <div className="autoBLur">还是快乐;</div>
+                <div className="autoBLur">感恩新时代，</div>
+                <div className="autoBLur">就像寒冬过后阳光灿烂，</div>
+                <div className="autoBLur">春暖花开! +</div>
                 <div className="autoBLur"><p className="note-text">了解更多&#8600;</p> </div>
             </section>
         </main>
