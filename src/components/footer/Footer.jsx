@@ -1,5 +1,5 @@
-import React from 'react'
-import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt, FaInstagram, FaWeixin, FaWhatsapp } from 'react-icons/fa'
+import React, { useState } from 'react'
+import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from 'react-icons/fa'
 import { MdPersonPin } from "react-icons/md";
 import "./index.css"
 import ctrip from "./images/ctrip-icon.svg"
@@ -7,9 +7,11 @@ import instagram from "./images/instagram.svg"
 import wechat from "./images/wechat.svg"
 import whatsapp from "./images/whatsapp.svg"
 import redbook from "./images/redbook.svg"
-
+import wechatQR from "./images/wechat.svg" // 🧷 Your QR code image
 
 const Footer = () => {
+    const [showWechatQR, setShowWechatQR] = useState(false)
+
     const ctripLink = "https://hotels.ctrip.com/hotels/114853402.html?cityid=1#ctm_ref=www_hp_bs_lst";
 
     return (
@@ -29,9 +31,9 @@ const Footer = () => {
                 <h1>社交媒体</h1>
                 <ul className="contact-list">
                     <div className="social-icons">
-                        <a href="https://your-wechat-link" target="_blank" rel="noopener noreferrer">
+                        <div onClick={() => setShowWechatQR(true)} style={{ cursor: 'pointer' }}>
                             <img src={wechat} alt="wechat" />
-                        </a>
+                        </div>
                         <a href="https://your-redbook-link" target="_blank" rel="noopener noreferrer">
                             <img src={redbook} alt="redbook" />
                         </a>
@@ -45,7 +47,6 @@ const Footer = () => {
                             <img src={ctrip} alt="ctrip" />
                         </a>
                     </div>
-
                 </ul>
             </div>
 
@@ -67,6 +68,16 @@ const Footer = () => {
                     ></iframe>
                 </div>
             </div>
+
+            {/* QR Code Modal */}
+            {showWechatQR && (
+                <div className="qr-modal" onClick={() => setShowWechatQR(false)}>
+                    <div className="qr-content" onClick={e => e.stopPropagation()}>
+                        <img src={wechatQR} alt="WeChat QR Code" />
+                        <button onClick={() => setShowWechatQR(false)}>关闭</button>
+                    </div>
+                </div>
+            )}
         </div>
     )
 }
