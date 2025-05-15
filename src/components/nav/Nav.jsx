@@ -22,7 +22,7 @@ export default function Nav() {
 
     const timeoutRef = useRef(null);
     const autoNextRef = useRef(null);
-    const timeRunning = 3000;
+    const timeRunning = 0;
     const timeAutoNext = 7000;
 
     const resetAutoNext = () => {
