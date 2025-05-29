@@ -33,6 +33,8 @@
 
 .grid-1 {
     --row: 5;
+    margin-bottom: 100px; /* add space below grid-1 */
+
 }
 
 .grid-2 {
