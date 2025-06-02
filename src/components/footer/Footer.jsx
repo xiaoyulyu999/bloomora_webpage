@@ -26,7 +26,7 @@ const Footer = () => {
                     <li><FaEnvelope /> 邮箱: info@bloomora.net</li>
                     <li><FaPhoneAlt /> 酒店电话: <li>+86-10-56320606</li>
                                                 <li>+86-10-32064892</li></li>
-                    <li><FaPhoneAlt /> 电话: English +353 0894625919</li>
+                    <li><FaPhoneAlt /> 海外电话: +353 0894625919 English</li>
                     <li><FaMapMarkerAlt /> 官方网址：www.bloomora.net</li>
                 </ul>
             </div>
