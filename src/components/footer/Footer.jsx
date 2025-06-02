@@ -20,10 +20,11 @@ const Footer = () => {
                 <h1>联系我们</h1>
                 <ul className="contact-list">
                     <li><FaMapMarkerAlt /> 地址：遇涧花开民宿 北京市平谷区北山路黑豆峪幼儿园西北侧约210米，靠近黑豆峪北环路。</li>
-                    <li><FaEnvelope /> 邮箱: yujianhuakai@gmail.com</li>
-                    <li><FaPhoneAlt /> 电话: 中文 +86 13716036809</li>
+                    <li><FaEnvelope /> 邮箱: info@bloomora.net</li>
+                    <li><FaPhoneAlt /> 酒店电话: <li>+86-10-56320606</li>
+                                                <li>+86-10-32064892</li></li>
                     <li><FaPhoneAlt /> 电话: English +353 0894625919</li>
-                    <li><FaMapMarkerAlt /> 官方网址：www.yujianhuakai.com</li>
+                    <li><FaMapMarkerAlt /> 官方网址：www.bloomora.net</li>
                 </ul>
             </div>
 
@@ -37,12 +38,12 @@ const Footer = () => {
                         <a href="https://your-redbook-link" target="_blank" rel="noopener noreferrer">
                             <img src={redbook} alt="redbook" />
                         </a>
-                        <a href="https://your-whatsapp-link" target="_blank" rel="noopener noreferrer">
-                            <img src={whatsapp} alt="whatsapp" />
-                        </a>
-                        <a href="https://your-instagram-link" target="_blank" rel="noopener noreferrer">
-                            <img src={instagram} alt="instagram" />
-                        </a>
+                        {/*<a href="https://your-whatsapp-link" target="_blank" rel="noopener noreferrer">*/}
+                        {/*    <img src={whatsapp} alt="whatsapp" />*/}
+                        {/*</a>*/}
+                        {/*<a href="https://your-instagram-link" target="_blank" rel="noopener noreferrer">*/}
+                        {/*    <img src={instagram} alt="instagram" />*/}
+                        {/*</a>*/}
                         <a href={ctripLink} target="_blank" rel="noopener noreferrer">
                             <img src={ctrip} alt="ctrip" />
                         </a>
