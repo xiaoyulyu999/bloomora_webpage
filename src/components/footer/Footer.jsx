@@ -7,13 +7,16 @@ import instagram from "./images/instagram.svg"
 import wechat from "./images/wechat.svg"
 import whatsapp from "./images/whatsapp.svg"
 import redbook from "./images/redbook.svg"
-import wechatQR from "./images/wechat.svg" // 🧷 Your QR code image
+import wechatQR from "./images/wechat.jpg" // 🧷 Your QR code image
+import whatsAppQR from "./images/whatsAppQR.jpg"
 
 const Footer = () => {
     const [showWechatQR, setShowWechatQR] = useState(false)
+    const [showWhatsAppQR, setShowWhatsAppQR] = useState(false)
 
     const ctripLink = "https://hotels.ctrip.com/hotels/114853402.html?cityid=1#ctm_ref=www_hp_bs_lst";
 
+    const redbookLink = "https://www.xiaohongshu.com/user/profile/64386545000000002a0095df?xsec_token=YB9ow2KFIAVM2d5IW0_E3EZPxMhFxZcwO1rWDi7BJfZ6E=&xsec_source=app_share&xhsshare=CopyLink&appuid=62c67cf9000000000303cf18&apptime=1748859328&share_id=d8b3c9c009d64d448c8ce0a2f43e9a70";
     return (
         <div className="grid-wrapper-footer">
             <div className="left-column">
@@ -35,12 +38,12 @@ const Footer = () => {
                         <div onClick={() => setShowWechatQR(true)} style={{ cursor: 'pointer' }}>
                             <img src={wechat} alt="wechat" />
                         </div>
-                        <a href="https://your-redbook-link" target="_blank" rel="noopener noreferrer">
+                        <a href={redbookLink} target="_blank" rel="noopener noreferrer">
                             <img src={redbook} alt="redbook" />
                         </a>
-                        {/*<a href="https://your-whatsapp-link" target="_blank" rel="noopener noreferrer">*/}
-                        {/*    <img src={whatsapp} alt="whatsapp" />*/}
-                        {/*</a>*/}
+                        <div onClick={() => setShowWhatsAppQR(true)} style={{ cursor: 'pointer' }}>
+                            <img src={whatsapp} alt="whatsapp" />
+                        </div>
                         {/*<a href="https://your-instagram-link" target="_blank" rel="noopener noreferrer">*/}
                         {/*    <img src={instagram} alt="instagram" />*/}
                         {/*</a>*/}
@@ -79,6 +82,17 @@ const Footer = () => {
                     </div>
                 </div>
             )}
+
+            {
+                showWhatsAppQR && (
+                    <div className="qr-modal" onClick={() => setShowWhatsAppQR(false)}>
+                        <div className="qr-content" onClick={e => e.stopPropagation()}>
+                            <img src={whatsAppQR} alt="WhatsApp QR Code" />
+                            <button onClick={() => setShowWhatsAppQR(false)}>关闭</button>
+                        </div>
+                    </div>
+                )
+            }
         </div>
     )
 }

@@ -54,8 +54,8 @@ const History = () => {
                 }}>
                     {/* Top-left: container 1 */}
                     <div className="container top-left">
-                        <div className="item"><img src={img3} alt="" /><p className="intro">This is an intro for the image</p></div>
-                        <div className="item"><img src={img2} alt="" /><p className="intro">This is an intro for the image</p></div>
+                        <div className="item"><img src={img3} alt="" /></div>
+                        <div className="item"><img src={img2} alt="" /></div>
                     </div>
                     {/* Middle: contents */}
                     <div className="contents center">
@@ -83,9 +83,9 @@ const History = () => {
                     </div>
                     {/* Bottom-right: container 2 */}
                     <div className="container bottom-right">
-                        <div className="item"><img src={img5} alt="" /><p className="intro">This is an intro for the image</p></div>
-                        <div className="item"><img src={img6} alt="" /><p className="intro">This is an intro for the image</p></div>
-                        <div className="item"><img src={img1} alt="" /><p className="intro">This is an intro for the image</p></div>
+                        <div className="item"><img src={img5} alt="" /></div>
+                        <div className="item"><img src={img6} alt="" /></div>
+                        <div className="item"><img src={img1} alt="" /></div>
                     </div>
                 </div>
         </main>

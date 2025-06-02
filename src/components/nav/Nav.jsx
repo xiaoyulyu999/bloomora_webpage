@@ -72,10 +72,10 @@ export default function Nav() {
                                 <div className="des">
                                     期待与您相遇
                                 </div>
-                                <div className="buttons">
-                                    <button>SEE MORE</button>
-                                    <button>SUBSCRIBE</button>
-                                </div>
+                                {/*<div className="buttons">*/}
+                                {/*    <button>SEE MORE</button>*/}
+                                {/*    <button>SUBSCRIBE</button>*/}
+                                {/*</div>*/}
                             </div>
                         </div>
                     ))}

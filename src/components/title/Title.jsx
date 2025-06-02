@@ -6,6 +6,7 @@ import sichImage from './images/sich.png';
 import threeImage from './images/3.png';
 import sixImage from './images/6.png';
 import candyImage from './images/candy.png';
+import quanjiafu from './images/quanjiafu.jpg';
 
 const Title = () => {
     return (
@@ -22,7 +23,7 @@ const Title = () => {
             <section className="grid grid-2">
                 <div className="autoShow">
                     <figure>
-                        <img src={sixImage} alt="Six Image" />
+                        <img src={quanjiafu} alt="Six Image" style={{ maxWidth: '850%', height: 'auto' }}/>
                     </figure>
                     <p>
                         🌸 “遇涧花开”民宿创办人周维英家庭荣获2024年第二季度“首都最美家庭”称号。自1992年来到平谷黄松峪乡后
