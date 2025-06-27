@@ -4,7 +4,6 @@ import './index.css';
 // Import images
 import sichImage from './images/sich.png';
 import threeImage from './images/3.png';
-import sixImage from './images/6.png';
 import candyImage from './images/candy.png';
 import quanjiafu from './images/quanjiafu.jpg';
 
