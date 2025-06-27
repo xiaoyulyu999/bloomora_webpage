@@ -107,7 +107,7 @@ export default function Nav() {
             <video src={videoBg} autoPlay loop muted />
             <div className="content">
                 <h1>Welcome</h1>
-                <p>To my site.</p>
+                <p>To BLOOMORA.</p>
             </div>
         </div>
     )
